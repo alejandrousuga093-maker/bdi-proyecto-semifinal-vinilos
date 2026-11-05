@@ -1,0 +1,11 @@
+# Archivos temporales y de datos locales
+*.xlsm
+*.xlsx
+*.csv
+*.tmp
+.DS_Store
+*.env
+__pycache__/
+*.log
+.vscode/
+.idea/

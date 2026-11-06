@@ -25,7 +25,7 @@ WHERE rot.fecha BETWEEN '2025-01-01' AND '2026-12-31'
 GROUP BY lp.codigo_linea, EXTRACT(MONTH FROM rot.fecha)
 ORDER BY mes, maquina;
 
--- Consulta 2: Participación Porcentual de Tiempo por Código de Paro Principal (Pareto)
+-- Consulta 2: Participación Porcentual de Tiempo por Código de Paro Principal (Pareto de paros por codigo) 
 WITH TotalTiempoParos AS (
     SELECT SUM(duracion_minutos) AS tiempo_total_global
     FROM registro_paro_detalle
